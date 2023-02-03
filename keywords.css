@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0px 0px 10px 0px;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #6e42c13f;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  .pro-sidebar-footer{
+        padding: 6px 0;
+        border:0px solid red;
+        overflow: hidden;
+        padding: 0;
+  }
+  .pro-sidebar-footer{
+        margin-bottom: 1rem;
+        padding: 0;
+        display: flex;
+        cursor: pointer;
+  }
+  .profileimage{
+    width: 40px;
+    height: 40px;
+    flex:0 0 auto;
+    border-radius: 20px;
+  }
+  .img{
+    border: 1px solid #8959cf;
+    height: 100%;
+    width: 100%; 
+    background-color: #8959cf;
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+
+  .inside-content{
+    margin-left:60px;
+    padding: 20px 20px 50px;
+    height: 100vh;
+  }
+
+  .border-none{
+    border: none;
+    background-color: transparent;
+  }
+  button{
+    background-color: #8959cf;
+    color: white;
+    font-size: 10px;
+  }
+  .dell-icon{
+    border: 1px solid #ececef;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 52px;
+    padding: 6px;
+  }
+  .dell-icon img{
+    height: 40px;
+    width:40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  .project-gridButtons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ececef;
+    height: 40px;
+  }
+
+  .project-gridButtons a.textClr{
+    color: #34234f;
+  }
+  .project-gridButtons a{
+    line-height: 40px;
+    text-transform: capitalize;
+    font-size: 12px ;
+    cursor: pointer;
+    width: 50%;
+  }
+  .project-gridButtons .project-divider{
+    height: 38px;
+    color: #ececef;
+  }
+  .pClr{
+    color: #8959cf;
+  }
+  .add-key:hover{
+    background-color: rgb(95, 62, 144) !important;
+    /* color: rgb(255, 255, 255); */
+    /* background-color: violet; */
+    text-decoration: none;
+    /* box-shadow: rgb(0, 0, 0 / 20%)0px 2px 4px -1px; */
+  }
+
+  .switch-hide{
+    width:100px!important;
+  }
+  .whiteCard{
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .brdBottom{
+    border-bottom: 1px solid #ececef;
+  }
+/* sidebar */
+
+body {margin:0}
+
+.icon-bar {
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: transparent;
+}
+
+.active {
+  background-color: #6e42c13f;
+}
+.css-isbt42 {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -16px;
+  width: calc(100% + 16px);
+  margin-left: -16px;
+}
+.rBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.table .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  gap: 15px;
+}
+.table .header .left{
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  grid-gap: 15px;
+  gap: 15px;
+}
+.aticon{
+  position: relative!important;
+  cursor: pointer!important;
+}
+.table .header .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  gap: 15px;
+}
+  /* <div class="content">
+  <h2>Responsive Sidebar Example</h2>
+  <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+  <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+  <h3>Resize the browser window to see the effect.</h3>
+</div> */
